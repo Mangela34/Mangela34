@@ -1,0 +1,12 @@
+import pyautogui 
+import webbrowser
+
+#abrindo navegador google
+
+webbrowser.open('http://www.google.com')
+
+# espera 5 segundos para a página carregar
+pyautogui.PAUSE = 5
+
+#encontrando a página de pesquisa
+search = pyautogui.locateCenterOnScreen('search')
