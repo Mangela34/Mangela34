@@ -1,0 +1,6 @@
+import pyautogui 
+import time
+
+print(pyautogui.position())
+print(pyautogui.size())
+pyautogui.PAUSE = 5
