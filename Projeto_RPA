@@ -1,0 +1,25 @@
+import pyautogui
+
+#importar biblioteca que abre o navegador web
+import webbrowser
+
+webbrowser.open("https://www.pipefy.com/pt-br/")
+pyautogui.Pause = 0.5    
+#Mova a seta ate o local indicado pela coordenada
+pyautogui.click(433, 79, duration=0.5)
+#Digite o indereço especificado abaixo:
+pyautogui.write('google.com.br')
+#Pressioner Entrar (enter) 
+pyautogui.press('enter')
+#Mova a seta ate o local indicado pela coordenada
+pyautogui.click(422, 459, duration=0.5)
+#Digite o nome especificado abaixo:
+pyautogui.write('pipefy')
+pyautogui.press('enter')
+pyautogui.click(46, 426, duration=0.5)
+
+
+
+
+
+
