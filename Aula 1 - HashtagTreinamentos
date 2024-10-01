@@ -1,0 +1,42 @@
+qtd_coca = 150
+qtd_pepsi = 130
+preco_coca = 1.50
+preco_pepsi = 1.50
+custo = 2500
+
+#Qual foi o faturamento de Pepsi da Loja?
+fat_pepsi = qtd_pepsi*preco_pepsi
+
+#inserimos o f-string somente quando juntamos um texto seguido de uma função 
+#texto:O faturamento de pepsi da loja foi de: R$ 
+#função: {fat_pepsi:.2f}
+# f'texto + {função}
+#observação: foi inserido isto (.2f) para que represente o numero de casas decimais
+print(f'O faturamento de pepsi da loja foi de: R${fat_pepsi: .2f}')
+
+#__________________________________________________________________________________________________________
+
+#Qual foi o faturamento de Coca da Loja?
+fat_coca = qtd_coca*preco_coca
+print(f'O faturamento de Coca-Cola da loja foi de: R${fat_coca:.2f}')
+
+#__________________________________________________________________________________________________________
+
+#Qual o lucro da loja?
+
+lucro = fat_pepsi + fat_coca - custo
+
+if lucro == 0:  #Se o lucro não for igual a zero:
+    print('A loja não teve lucro nesse mês.')
+                #Ou se o lucro da 
+elif lucro > 0:
+    print(f'O lucro da loja nesse período foi de: R${lucro:.2f}')
+else:
+    print(f'Nesse período a loja teve um prejuízo de: R${(lucro * -1)}')
+    
+#__________________________________________________________________________________________________________
+
+#Qual foi a Margem da Loja? (Lembre-se, margem = Lucro / Faturamento). Não precisa formatar em percentual
+margem = lucro / (fat_coca + fat_pepsi)
+print (f'A margem da loja nesse período foi de: {margem:.2%}')
+
