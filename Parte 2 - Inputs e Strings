@@ -1,0 +1,2 @@
+bebida = input('Insira o código da bebida que será consultada: ').upper()
+print('BAC' in bebida)
